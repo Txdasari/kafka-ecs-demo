@@ -1,0 +1,18 @@
+{
+  "doc": "Sample schema to help you get started.",
+  "fields": [
+    {
+      "doc": "The int type is a 32-bit signed integer.",
+      "name": "my_field1",
+      "type": "int"
+    },
+    {
+      "doc": "The string is a unicode character sequence.",
+      "name": "my_field2",
+      "type": "string"
+    }
+  ],
+  "name": "sampleRecord",
+  "namespace": "com.mycorp.mynamespace",
+  "type": "record"
+}
