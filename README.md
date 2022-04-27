@@ -48,7 +48,11 @@ them to your `setup.py` file and rerun the `pip install -r requirements.txt`
 command.
 
 ## Useful commands
-
+    docker build -t demo-service .
+    docker run -p 8080:8080 demo-service
+    docker buildx build --platform=linux/amd64 -t kafka-test-imdb .
+    docker run -p 8080:8080 kafka-test-imdb
+    
  * `cdk ls`          list all stacks in the app
  * `cdk synth`       emits the synthesized CloudFormation template
  * `cdk deploy`      deploy this stack to your default AWS account/region
