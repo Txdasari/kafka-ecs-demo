@@ -12,5 +12,9 @@ COPY requirements.txt ./avro/Message.avsc ./
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
+RUN pip  install confluent_kafka
+
+RUN pip  install requests
+
 CMD [ "python","./avro-consumer.py" ]
 
